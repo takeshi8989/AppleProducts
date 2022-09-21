@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom';
+import { BrowserRouter, BrowserRouter as Router, HashRouter, Route, Switch } from 'react-router-dom';
 import Home from './Home';
 import ItemDetails from './ItemDetails';
 import Navbar from './Navbar';
@@ -20,7 +20,7 @@ function App() {
     </React.StrictMode>
     */
     <React.StrictMode>
-      <HashRouter>
+      <BrowserRouter>
         <div className="App">
           <Navbar />
           <Switch>
@@ -47,7 +47,7 @@ function App() {
             </Route>
           </Switch>
         </div>
-      </HashRouter>
+      </BrowserRouter>
     </React.StrictMode>
 
     //<Router>
