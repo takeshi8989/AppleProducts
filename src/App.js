@@ -7,18 +7,15 @@ import Result from './Result';
 import Favorites from './Favorites';
 import History from './History';
 import OrderDetails from './OrderDetails';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 function App() {
 
+  useEffect(() => {
+    console.log("deployed");
+  },[])
+
   return (
-    /*
-    <React.StrictMode>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </React.StrictMode>
-    */
     <React.StrictMode>
       <BrowserRouter basename='/AppleProducts'>
         <div className="App">
@@ -49,11 +46,6 @@ function App() {
         </div>
       </BrowserRouter>
     </React.StrictMode>
-
-    //<Router>
-      
-    //</Router>
-    
   );
 }
 
