@@ -332,3 +332,8 @@ button:active {
   width: auto;
   margin: 10px;
 }
+
+
+.not-found{
+  text-align: center;
+}

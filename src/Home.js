@@ -43,6 +43,7 @@ const Home = () => {
 
     useEffect(() => {
         setItems(productList);
+        console.log("deployed");
     },[change]);
 
     return (

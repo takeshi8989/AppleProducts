@@ -7,6 +7,7 @@ import Result from './Result';
 import Favorites from './Favorites';
 import History from './History';
 import OrderDetails from './OrderDetails';
+import NotFound from './NotFound';
 import React, { useEffect } from 'react';
 
 function App() {
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route path="/order-detail:id">
               <OrderDetails />
+            </Route>
+            <Route path="*">
+              <NotFound />
             </Route>
           </Switch>
         </div>
