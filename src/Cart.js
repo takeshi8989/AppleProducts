@@ -79,7 +79,7 @@ const Cart = () => {
     return (
         <div className="cart">
             <div className="left">
-                <Link to="/"><button>Home</button></Link>
+                <Link to="/AppleProducts"><button>Home</button></Link>
             </div>
             {isLoading && <div className="text-center">Loading...</div>}
             {!isLoading && cartItems.length == 0 && <div className="text-center">no items</div>}

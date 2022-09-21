@@ -26,7 +26,7 @@ const Favorites = () => {
     return (
         <div className="favorites">
             <div className="left">
-                <Link to="/"><button>Home</button></Link>
+                <Link to="/AppleProducts"><button>Home</button></Link>
             </div>
             {isLoading && <div>Loading...</div>}
             {!isLoading && favoriteItems.length == 0 && <div>No favorite items</div>}
