@@ -12,7 +12,6 @@ const History = () => {
         });
         setOrders(result);
         setIsLoading(false);
-        console.log(orderHistory);
     },[])
 
     return (

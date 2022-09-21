@@ -8,13 +8,9 @@ import Favorites from './Favorites';
 import History from './History';
 import OrderDetails from './OrderDetails';
 import NotFound from './NotFound';
-import React, { useEffect } from 'react';
+import React from 'react';
 
 function App() {
-
-  useEffect(() => {
-    console.log("deployed");
-  },[])
 
   return (
     <React.StrictMode>
