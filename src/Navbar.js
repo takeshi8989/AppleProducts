@@ -7,7 +7,7 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="title">
-                <Link to="/" className='decoration-none'><h1>Apple's Products</h1></Link>
+                <Link to="/" className='decoration-none'><h1>Apple's Products (deployed)</h1></Link>
             </div>
             <div className="icons">
                 <Link to="/cart"><p><i className="fa-solid fa-cart-shopping fa-xl"></i></p></Link>
