@@ -27,22 +27,22 @@ function App() {
             <Route exact path="/AppleProducts">
               <Home />
             </Route>
-            <Route path="/items:id">
+            <Route path="/AppleProducts/items:id">
               <ItemDetails  />
             </Route>
-            <Route path="/cart">
+            <Route path="/AppleProducts/cart">
               <Cart />
             </Route>
-            <Route path="/result">
+            <Route path="/AppleProducts/result">
               <Result />
             </Route>
-            <Route path="/favorites">
+            <Route path="/AppleProducts/favorites">
               <Favorites />
             </Route>
-            <Route path="/history">
+            <Route path="/AppleProducts/history">
               <History />
             </Route>
-            <Route path="/order-detail:id">
+            <Route path="/AppleProducts/order-detail:id">
               <OrderDetails />
             </Route>
           </Switch>

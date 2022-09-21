@@ -15,7 +15,7 @@ const Result = () => {
             {success && 
                 <div>
                     <p>Thank you for purchasing our items!</p>
-                    <p><Link to="/history">check your order history</Link></p>
+                    <p><Link to="/AppleProducts/history">check your order history</Link></p>
                     <Link to="/AppleProducts"><button className="">back Home</button></Link>
                 </div>
             }

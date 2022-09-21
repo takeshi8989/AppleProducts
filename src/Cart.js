@@ -36,7 +36,7 @@ const Cart = () => {
         let order = {total: subTotal, date: new Date().toDateString(), items: orderItems, numOfItems: totalItems, id: orderHistory.length + 1};
         orderHistory.push(order);
 
-        history.push("/result");
+        history.push("/AppleProducts/result");
         setTimeout(() => {
             for(let i = 0; i < cartItems.length; i++){
                 removeItem(cartItems[i]);

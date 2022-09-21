@@ -25,10 +25,10 @@ const ItemCard = ({item, change, setChange}) => {
 
     return (
         <div className='item-card'>
-            <Link to={`/items${item.id}`} className="decoration-none">
+            <Link to={`/AppleProducts/items${item.id}`} className="decoration-none">
                 <img src={item.img} alt={item.name} />
             </Link>
-            <Link to={`/items${item.id}`} className="decoration-none">
+            <Link to={`/AppleProducts/items${item.id}`} className="decoration-none">
                 <h4>{item.name}</h4>
             </Link>
             <p>{item.price} 円～</p>
