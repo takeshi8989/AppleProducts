@@ -15,7 +15,7 @@ const Favorites = () => {
 
     const buyNow = (item) => {
         item.quantity += 1;
-        history.push("/AppleProducts/cart");
+        history.push("/cart");
     }
 
     useEffect(() => {
@@ -26,7 +26,7 @@ const Favorites = () => {
     return (
         <div className="favorites">
             <div className="left">
-                <Link to="/AppleProducts"><button>Home</button></Link>
+                <Link to="/"><button>Home</button></Link>
             </div>
             {isLoading && <div>Loading...</div>}
             {!isLoading && favoriteItems.length == 0 && <div>No favorite items</div>}
@@ -36,7 +36,7 @@ const Favorites = () => {
                         <div key={item.id}>
                             <div className="favorite-item">
                                 <div>
-                                <Link to={{ pathname: `/AppleProducts/items${item.id}`, state: { item: {item}} }}
+                                <Link to={{ pathname: `/items${item.id}`, state: { item: {item}} }}
                                     className="decoration-none">
                                     <img src={item.img} alt={item.name} />
                                 </Link>

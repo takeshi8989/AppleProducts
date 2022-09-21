@@ -29,7 +29,7 @@ const History = () => {
                             </div>
                             <div>
                                 <p>Total Items: {order.numOfItems}</p>
-                                <Link to={{ pathname: `/AppleProducts/order-detail${order.id}`, state: { order: {order}} }}><p>See Details</p></Link>
+                                <Link to={{ pathname: `/order-detail${order.id}`, state: { order: {order}} }}><p>See Details</p></Link>
                             </div>
                         </div>
                     </div>

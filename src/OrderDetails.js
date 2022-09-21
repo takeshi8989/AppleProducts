@@ -11,7 +11,7 @@ const OrderDetails = () => {
 
     const buyAgain = (item) => {
         getActualItem(item).quantity += 1;
-        history.push("/AppleProducts/cart");
+        history.push("/cart");
     }
 
     const getActualItem = (item) => {
@@ -41,7 +41,7 @@ const OrderDetails = () => {
             {order.items.map(item => 
                 <div className="ordered-item" key={item.id}>
                     <div>
-                    <Link to={`/AppleProducts/items${item.id}`}
+                    <Link to={`/items${item.id}`}
                         className="decoration-none">
                         <img src={item.img} alt={item.name} />
                     </Link>

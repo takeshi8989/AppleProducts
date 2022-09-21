@@ -33,7 +33,7 @@ const ItemDetails = () => {
             {!isSetting && 
                 <div className="item-details">
                     <div className="left">
-                        <Link to="/AppleProducts"><button>Home</button></Link>
+                        <Link to="/"><button>Home</button></Link>
                     </div>
                     <img src={item.img} />
                     <h2>{item.name}</h2>

@@ -36,7 +36,7 @@ const Cart = () => {
         let order = {total: subTotal, date: new Date().toDateString(), items: orderItems, numOfItems: totalItems, id: orderHistory.length + 1};
         orderHistory.push(order);
 
-        history.push("/AppleProducts/result");
+        history.push("/result");
         setTimeout(() => {
             for(let i = 0; i < cartItems.length; i++){
                 removeItem(cartItems[i]);
@@ -79,7 +79,7 @@ const Cart = () => {
     return (
         <div className="cart">
             <div className="left">
-                <Link to="/AppleProducts"><button>Home</button></Link>
+                <Link to="/"><button>Home</button></Link>
             </div>
             {isLoading && <div className="text-center">Loading...</div>}
             {!isLoading && cartItems.length == 0 && <div className="text-center">no items</div>}

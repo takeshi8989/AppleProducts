@@ -20,29 +20,29 @@ function App() {
     </React.StrictMode>
     */
     <React.StrictMode>
-      <BrowserRouter>
+      <BrowserRouter basename='/AppleProducts'>
         <div className="App">
           <Navbar />
           <Switch>
-            <Route exact path="/AppleProducts">
+            <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/AppleProducts/items:id">
+            <Route path="/items:id">
               <ItemDetails  />
             </Route>
-            <Route path="/AppleProducts/cart">
+            <Route path="/cart">
               <Cart />
             </Route>
-            <Route path="/AppleProducts/result">
+            <Route path="/result">
               <Result />
             </Route>
-            <Route path="/AppleProducts/favorites">
+            <Route path="/favorites">
               <Favorites />
             </Route>
-            <Route path="/AppleProducts/history">
+            <Route path="/history">
               <History />
             </Route>
-            <Route path="/AppleProducts/order-detail:id">
+            <Route path="/order-detail:id">
               <OrderDetails />
             </Route>
           </Switch>
