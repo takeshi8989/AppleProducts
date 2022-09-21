@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AppleProducts/static/css/main.60b170e0.css",
+    "main.js": "/AppleProducts/static/js/main.8f53eb34.js",
+    "index.html": "/AppleProducts/index.html",
+    "main.60b170e0.css.map": "/AppleProducts/static/css/main.60b170e0.css.map",
+    "main.8f53eb34.js.map": "/AppleProducts/static/js/main.8f53eb34.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.60b170e0.css",
+    "static/js/main.8f53eb34.js"
+  ]
+}
